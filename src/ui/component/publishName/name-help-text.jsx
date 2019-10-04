@@ -27,8 +27,9 @@ function NameHelpText(props: Props) {
       <React.Fragment>
         {__('You already have a claim at')}
         {` ${uri} `}
-        <Button button="link" label="Edit it" onClick={() => onEditMyClaim(myClaimForUri, editUri)} />
-        <br />
+        <div>
+           <Button button="link" label="Edit it" onClick={() => onEditMyClaim(myClaimForUri, editUri)} />
+        </div>
         {__('Publishing will update your existing claim.')}
       </React.Fragment>
     );
